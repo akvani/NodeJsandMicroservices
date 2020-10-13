@@ -1,0 +1,14 @@
+let uname='Kalaivani';
+let pw='password';
+let login = (resolve,reject) => {
+    if(uname==='Kalaivani' && pw==='password')
+    {
+        resolve();
+    }
+    else{
+        reject();
+    }
+};
+let resolve =()=> console.log("Login success");
+let reject =()=>  console.log("Login failed");
+login(resolve,reject);
